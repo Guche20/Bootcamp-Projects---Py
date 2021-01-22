@@ -32,8 +32,10 @@ for number in range(1, nr_numbers + 1):
   password += random.choice(numbers)
 for symbol in range(1, nr_symbols + 1):
   password += random.choice(symbols)
+print(password)
 random.shuffle(password)
-word_shuffle = ''.join(password)
-print(word_shuffle)
-
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+print(password)
+new_password=""
+for char in password:
+  new_password += char
+print(new_password)
